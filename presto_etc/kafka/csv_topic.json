@@ -1,0 +1,30 @@
+{
+  "tableName": "csv_topic",
+  "topicName": "csv_topic",
+  "schemaName": "default",
+  "message": {
+    "dataFormat":"csv",
+    "fields": [
+      {
+        "name": "nombre",
+        "mapping": 0,
+        "type": "VARCHAR"
+      },
+      {
+        "name": "edad",
+        "mapping": 1,
+        "type": "INT"
+      },
+      {
+        "name": "peso",
+        "mapping": 2,
+        "type": "DOUBLE"
+      },
+      {
+        "name": "direccion",
+        "mapping": 3,
+        "type": "VARCHAR"
+      }
+    ]
+  }
+}

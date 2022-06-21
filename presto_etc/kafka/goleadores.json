@@ -1,0 +1,30 @@
+{
+  "tableName": "goleadores",
+  "topicName": "goleadores",
+  "schemaName": "default",
+  "message": {
+    "dataFormat":"json",
+    "fields": [
+      {
+        "name": "jugador",
+        "mapping": "jugador",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "equipo",
+        "mapping": "equipo",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "goles",
+        "mapping": "goles",
+        "type": "INT"
+      },
+      {
+        "name": "goles_por_partido",
+        "mapping": "goles_por_partido",
+        "type": "DOUBLE"
+      }
+    ]
+  }
+}

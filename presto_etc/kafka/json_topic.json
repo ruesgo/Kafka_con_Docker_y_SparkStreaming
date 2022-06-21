@@ -1,0 +1,30 @@
+{
+  "tableName": "json_topic",
+  "topicName": "json_topic",
+  "schemaName": "default",
+  "message": {
+    "dataFormat":"json",
+    "fields": [
+      {
+        "name": "nombre",
+        "mapping": "nombre",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "edad",
+        "mapping": "edad",
+        "type": "INT"
+      },
+      {
+        "name": "peso",
+        "mapping": "peso",
+        "type": "DOUBLE"
+      },
+      {
+        "name": "direccion",
+        "mapping": "direccion",
+        "type": "VARCHAR"
+      }
+    ]
+  }
+}
