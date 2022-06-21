@@ -8,10 +8,6 @@
       <sourceFolder url="file://$MODULE_DIR$/src/main/scala" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/test/scala" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
-      <excludeFolder url="file://$MODULE_DIR$/src/test" />
-      <excludeFolder url="file://$MODULE_DIR$/kafka_2.12-2.8.1" />
-      <excludeFolder url="file://$MODULE_DIR$/kafka_workspace" />
-      <excludeFolder url="file://$MODULE_DIR$/spark-warehouse" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
