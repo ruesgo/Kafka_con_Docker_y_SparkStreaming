@@ -1,7 +1,7 @@
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.functions._
 
-object DStream {
+object Wordcount {
   def main(args: Array[String]): Unit = {
     val spark = SparkSession
       .builder
@@ -17,16 +17,11 @@ object DStream {
     val lines = spark
       .readStream
       .format("kafka")
-      .option("kafka.bootstrap.servers", "localhost:29092")//,0.0.0.0:19093,0.0.0.0:19094")
+      .option("kafka.bootstrap.servers", "localhost:29092")
       .option("subscribe", "wordcount_topic")
       .option("startingOffsets", "earliest")
       .load()
       .selectExpr("CAST(value AS STRING)")
-
-//    lines.printSchema()
-//    val query1=lines.writeStream
-//      .outputMode("append")
-//      .format("console").start()
 
 //    Split the lines into words
 //    explode turns each item in an array into a separate row
@@ -46,7 +41,6 @@ object DStream {
       .outputMode("complete")
       .format("console").start()
 
-//    query1.awaitTermination()
     query.awaitTermination()
   }
 }

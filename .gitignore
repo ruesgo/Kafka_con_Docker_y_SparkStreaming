@@ -1,0 +1,8 @@
+.idea
+applicationHistory
+kafka_2.12-2.8.1
+kafka_workspace
+spark-warehouse
+src/main/resources
+src/test
+target
